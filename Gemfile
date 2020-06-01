@@ -24,7 +24,7 @@ gem 'turbolinks', '~> 5'
 
 gem'slim','~> 4.1.0'
 gem'html2slim','~> 0.2.0'
-gem'bootstrap','~> 4.1.1'
+gem'bootstrap','~> 4.3.1'
 gem'jquery-rails'
 gem'slim-rails'
 # Use Active Storage variant
