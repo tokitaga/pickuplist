@@ -1,0 +1,60 @@
+= form_for @pickuplist do |f|
+  - if @pickuplist.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@pickuplist.errors.count, "error")} prohibited this pickuplist from being saved:"
+      ul
+        - @pickuplist.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :vin
+    = f.text_field :vin
+  .field
+    = f.label :date
+    = f.date_select :date
+  .field
+    = f.label :place
+    = f.text_field :place
+  .field
+    = f.label :list_number
+    = f.number_field :list_number
+  .field
+    = f.label :year
+    = f.number_field :year
+  .field
+    = f.label :maker
+    = f.text_field :maker
+  .field
+    = f.label :grade
+    = f.text_field :grade
+  .field
+    = f.label :model
+    = f.text_field :model
+  .field
+    = f.label :cc
+    = f.text_field :cc
+  .field
+    = f.label :mileage
+    = f.number_field :mileage
+  .field
+    = f.label :color
+    = f.text_field :color
+  .field
+    = f.label :score
+    = f.text_field :score
+  .field
+    = f.label :c_and_f
+    = f.number_field :c_and_f
+  .field
+    = f.label :purchase
+    = f.number_field :purchase
+  .field
+    = f.label :country
+    = f.text_field :country
+  .field
+    = f.label :result
+    = f.number_field :result
+  .field
+    = f.label :status
+    = f.text_field :status
+  .actions = f.submit

@@ -1,0 +1,50 @@
+body.container.row
+  p.text-light.bg-dark.w-100.m-0 Pickuplist!
+  div.col-3.bg-secondary PickUpList
+  div.col-9.bg-success.p-0
+    h1 Listing pickuplists
+    table.col-9.bg-info
+      thead
+        tr
+          th Vin
+          th Date
+          th Place
+          th List number
+          th Year
+          th Maker
+          th Grade
+          th Model
+          th CC
+          th Mileage
+          th Color
+          th Score
+          th C&F
+          th Purchase
+          th Country
+          th Result
+          th Status
+
+      tbody.col-9
+        - @pickuplists.each do |pickuplist|
+          tr
+            td = pickuplist.vin
+            td = pickuplist.date
+            td = pickuplist.place
+            td = pickuplist.list_number
+            td = pickuplist.year
+            td = pickuplist.maker
+            td = pickuplist.grade
+            td = pickuplist.model
+            td = pickuplist.cc
+            td = pickuplist.mileage
+            td = pickuplist.color
+            td = pickuplist.score
+            td = pickuplist.c_and_f
+            td = pickuplist.purchase
+            td = pickuplist.country
+            td = pickuplist.result
+            td = pickuplist.status
+            td = link_to 'Show', pickuplist
+            td = link_to 'Edit', edit_pickuplist_path(pickuplist)
+            td = link_to 'Destroy', pickuplist, data: { confirm: 'Are you sure?' }, method: :delete
+      = link_to 'New Pickuplist', new_pickuplist_path

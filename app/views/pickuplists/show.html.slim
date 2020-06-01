@@ -1,0 +1,57 @@
+p#notice = notice
+
+p
+  strong Vin:
+  = @pickuplist.vin
+p
+  strong Date:
+  = @pickuplist.date
+p
+  strong Place:
+  = @pickuplist.place
+p
+  strong List number:
+  = @pickuplist.list_number
+p
+  strong Year:
+  = @pickuplist.year
+p
+  strong Maker:
+  = @pickuplist.maker
+p
+  strong Grade:
+  = @pickuplist.grade
+p
+  strong Model:
+  = @pickuplist.model
+p
+  strong Cc:
+  = @pickuplist.cc
+p
+  strong Mileage:
+  = @pickuplist.mileage
+p
+  strong Color:
+  = @pickuplist.color
+p
+  strong Score:
+  = @pickuplist.score
+p
+  strong C and f:
+  = @pickuplist.c_and_f
+p
+  strong Purchase:
+  = @pickuplist.purchase
+p
+  strong Country:
+  = @pickuplist.country
+p
+  strong Result:
+  = @pickuplist.result
+p
+  strong Status:
+  = @pickuplist.status
+
+=> link_to 'Edit', edit_pickuplist_path(@pickuplist)
+'|
+=< link_to 'Back', pickuplists_path

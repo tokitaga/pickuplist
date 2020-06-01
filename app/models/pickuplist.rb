@@ -1,0 +1,2 @@
+class Pickuplist < ApplicationRecord
+end

@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vin: MyString
+  date: 2020-05-29
+  place: MyString
+  list_number: 1
+  year: 1
+  maker: MyString
+  grade: MyString
+  model: MyString
+  cc: 
+  mileage: 1
+  color: MyString
+  score: 1.5
+  c_and_f: 1
+  purchase: 1
+  country: MyString
+  result: 1
+  status: MyString
+
+two:
+  vin: MyString
+  date: 2020-05-29
+  place: MyString
+  list_number: 1
+  year: 1
+  maker: MyString
+  grade: MyString
+  model: MyString
+  cc: 
+  mileage: 1
+  color: MyString
+  score: 1.5
+  c_and_f: 1
+  purchase: 1
+  country: MyString
+  result: 1
+  status: MyString
